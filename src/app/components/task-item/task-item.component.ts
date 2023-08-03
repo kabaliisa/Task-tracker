@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Task } from 'src/app/Task';
 
 @Component({
@@ -7,6 +8,7 @@ import { Task } from 'src/app/Task';
   styleUrls: ['./task-item.component.css']
 })
 export class TaskItemComponent {
+  faTimes = faTimes;
   @Input() task: Task;
 
 }
